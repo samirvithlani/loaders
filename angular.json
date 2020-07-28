@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "exceptionhandling"
+    }
+  },
+  "defaultProject": "exceptionhandling",
+  "cli": {
+    "analytics": false
+  }
 }
