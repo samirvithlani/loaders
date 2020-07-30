@@ -10,13 +10,15 @@ import { GlobleErrorHandlerService } from './globle-error-handler.service';
 import { LoaderComponent } from './loader/loader.component';
 import { LoaderService } from './loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
+import { RetryComponent } from './retry/retry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     ErrorComponent,
-    LoaderComponent
+    LoaderComponent,
+    RetryComponent
   ],
   imports: [
     BrowserModule,
