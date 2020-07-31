@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -16,6 +16,15 @@ export class EmployeeComponent implements OnInit {
     console.log('button')
     throw new Error('not found..')
   }
+
+  @HostListener('click') myClick(){
+
+    alert("clicked...")
+  }
+  @HostListener('window:scroll',['$event']) myscroll(){
+    
+    console.log('scrolling....')
+  }
   ngOnInit(): void {
 
     this.service.viewEmployee().subscribe(res=>{
@@ -23,6 +32,7 @@ export class EmployeeComponent implements OnInit {
       this.employee = res;
 
     })
+   
    
   }
 

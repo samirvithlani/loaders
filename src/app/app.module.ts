@@ -11,6 +11,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { LoaderService } from './loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
 import { RetryComponent } from './retry/retry.component';
+import { MyDirectiverDirective } from './my-directiver.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RetryComponent } from './retry/retry.component';
     EmployeeComponent,
     ErrorComponent,
     LoaderComponent,
-    RetryComponent
+    RetryComponent,
+    MyDirectiverDirective
   ],
   imports: [
     BrowserModule,
