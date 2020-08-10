@@ -12,6 +12,16 @@ import { LoaderService } from './loader.service';
 import { LoaderInterceptor } from './loader.interceptor';
 import { RetryComponent } from './retry/retry.component';
 import { MyDirectiverDirective } from './my-directiver.directive';
+import { MenuComponent } from './menu/menu.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { App1Component } from './app1/app1.component';
+import { App2Component } from './aboutus/app2/app2.component';
+import { FormsDemoComponent } from './forms-demo/forms-demo.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatFormFieldModule, matFormFieldAnimations, MatFormField} from '@angular/material/form-field';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+  import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -20,13 +30,24 @@ import { MyDirectiverDirective } from './my-directiver.directive';
     ErrorComponent,
     LoaderComponent,
     RetryComponent,
-    MyDirectiverDirective
+    MyDirectiverDirective,
+    MenuComponent,
+    AboutusComponent,
+    App1Component,
+    App2Component,
+    FormsDemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatFormFieldModule,
+    NoopAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule
+    
 
   ],
   providers: [

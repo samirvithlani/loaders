@@ -1,0 +1,34 @@
+<mat-radio-group class="example-radio-group" (change)="changeCombo($event)" [(ngModel)]="stream">
+    <mat-radio-button class="example-radio-button" *ngFor="let stream of streams" [value]="stream">
+        {{stream}}
+    </mat-radio-button>
+</mat-radio-group>
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+
+    <div class="input-container">
+        <div class="selected-value">selectd stream {{stream}}</div>
+
+        <div *ngIf="stream==='science'">
+
+            neet:-<input type="text" formControlName="neet">
+            <br>
+            <mat-radio-group class="example-radio-group" (change)="changeCombo($event)" [(ngModel)]="opt1" [ngModelOptions]="{standalone: true}">
+                <div class="selected-value">selectd option {{opt1}}</div>           
+                <mat-radio-button class="example-radio-button" *ngFor="let option of scienceoopt" [value]="option">
+                    {{option}}
+                </mat-radio-button>
+            </mat-radio-group>
+                                
+        </div>
+
+        <div *ngIf="stream==='commerce'">
+            12th:-<input type="text" formControlName="commper">
+        </div>
+
+        <div *ngIf="stream==='arts'">
+            10:-<input type="text" formControlName="artsper">
+        </div>
+
+    </div>
+    <button type="submit">SUBMIT</button>
+</form>

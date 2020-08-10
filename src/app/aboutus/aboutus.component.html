@@ -1,0 +1,23 @@
+<h1>ABOUT US</h1>
+<input type="text" placeholder="input here..." #val>
+<button type="button" (click)="submitvalue(val)">SUBMIT</button>
+<br>
+
+<!-- <app-app2 [MyValue]= "value"></app-app2> -->
+
+<!-- <a [routerLink]="['app2']"[queryParams]="{MyValue:value}">app2</a>
+
+<router-outlet></router-outlet>
+ -->
+ <app-app2 *ngIf="app2comp" [MyValue]="value"></app-app2>
+<!-- <a routerLink ="app2">app2</a> -->
+
+ <!-- <a [routerLink] ="['app2']"[queryParams]="{MyValue:value}">CHILD</a> -->
+ 
+
+<!-- <a [routerLink]="['app2',{MyValue:value}]">Go to Page 99</a> -->
+
+   <!-- <app-app2 *ngIf ="app2exist"[MyValue]="value"></app-app2> -->
+
+    <button (click)="destroy()">Destroy</button>
+  <!-- <router-outlet></router-outlet> -->
