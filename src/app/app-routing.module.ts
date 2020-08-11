@@ -7,12 +7,14 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { App1Component } from './app1/app1.component';
 import { App2Component } from './aboutus/app2/app2.component';
 import { FormsDemoComponent } from './forms-demo/forms-demo.component';
+import { DebounceComponent } from './debounce/debounce.component';
 
 
 const routes: Routes = [
   {path:'emp',component:EmployeeComponent},
   {path:'error',component:ErrorComponent},
   {path:'retry',component:RetryComponent},
+  {path:'debounce',component:DebounceComponent},
   {path:'forms',component:FormsDemoComponent},
   {path:'aboutus',component:AboutusComponent,children:[
     {path:'app1',component:App1Component},

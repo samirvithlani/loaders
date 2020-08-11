@@ -14,6 +14,7 @@ export class MenuComponent implements OnInit {
       {title:'aboutUs',link:'aboutus'},
       {title:'retry',link:'retry'},
       {title:'Forms',link:'forms'},
+      {title:'debounce',link:'debounce'},
     ]
   }
 

@@ -22,6 +22,9 @@ import {MatFormFieldModule, matFormFieldAnimations, MatFormField} from '@angular
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
   import { from } from 'rxjs';
+import { DebounceComponent } from './debounce/debounce.component';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     AboutusComponent,
     App1Component,
     App2Component,
-    FormsDemoComponent
+    FormsDemoComponent,
+    DebounceComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,9 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     NoopAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    LoadingBarRouterModule,
+    LoadingBarModule
     
 
   ],
